@@ -1,0 +1,16 @@
+---
+- name: Deploy A web servers
+  hosts: ansible4
+  become: yes
+
+  tasks:
+    - name: Install Git
+      yum:  
+        name: git
+        state: present
+
+    - name: Host Or Keep Code
+      git:
+        repo: https://github.com/CeeyIT-Solutions/ecomm-3.git
+        dest: /var/www/html
+        
