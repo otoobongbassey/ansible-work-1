@@ -1,6 +1,6 @@
 ---
 - name: Websites is under maintenance
-  hosts: ansible4
+  hosts: ansible2Cent
   become: yes
 
   tasks:
