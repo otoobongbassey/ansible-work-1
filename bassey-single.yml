@@ -1,0 +1,10 @@
+---
+- name: Update ansible2Cent servers
+  hosts: ansible2Cent
+
+  tasks:
+  - name: Create Directory
+    file:  
+      path: /home/ec2-user/try_dir
+      state: directory
+...
