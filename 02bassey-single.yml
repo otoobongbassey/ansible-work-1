@@ -1,6 +1,6 @@
 ---
 - name: Install HTTPD servers
-  hosts: ansible3
+  hosts: group1
   become: yes
 
   tasks:
