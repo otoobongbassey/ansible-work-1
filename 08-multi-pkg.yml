@@ -28,7 +28,7 @@
       apt:  
         name: apache2
         state: present
-      when: ansible_distrubution == "Ubuntu"  
+      when: ansible_distribution == "Ubuntu"  
 
     - name: Start apache Service
       service:
