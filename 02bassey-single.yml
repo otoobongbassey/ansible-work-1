@@ -8,9 +8,11 @@
       yum:  
         name: httpd
         state: present
+      when: ansible_distribution == "Ubuntu" or ansible_distribution == "Redhat"  
 
     - name: Start httpd Service
       service:
         name: httpd
         state: started
         enabled: yes
+      when: ansible_distribution == "Ubuntu" or ansible_distribution == "Redhat"  
