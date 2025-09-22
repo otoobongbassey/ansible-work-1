@@ -1,11 +1,11 @@
 ---
 - name: Install HTTPD servers
-  hosts: group1
+  hosts: ansible1CentOS
   become: yes
 
   tasks:
     - name: Install HTTPD
-      yum:  
+      apt:  
         name: httpd
         state: present
       when: ansible_distribution == "Ubuntu" or ansible_distribution == "Redhat"  
@@ -17,21 +17,8 @@
         enabled: yes
       when: ansible_distribution == "Ubuntu" or ansible_distribution == "Redhat"  
 
-    - name: Install apache2
-      apt:  
-        name: apache2
-        state: present
-      when: ansible_distribution == "Ubuntu" or ansible_distribution == "Redhat"  
-
-    - name: Start apache Service
-      service:
-        name: apache2
-        state: started
-        enabled: yes
-      when: ansible_distribution == "Ubuntu" or ansible_distribution == "Redhat" 
-
     - name: Enable apache2 Service
       service:
         name: apache2
         enabled: yes    
-      when: ansible_distribution == "Ubuntu" or ansible_distribution == "Redhat"     
+      when: ansible_distribution == "Ubuntu" or ansible_distribution == "Redhat"  
