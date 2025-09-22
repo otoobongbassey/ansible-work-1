@@ -3,7 +3,7 @@
   hosts: group1
   become: yes
   vars:
-  myusername: Bassey 
+    myusername: Bassey 
 
   tasks:
     - name: Update dynamic variable
