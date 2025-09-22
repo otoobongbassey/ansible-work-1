@@ -4,7 +4,7 @@
   become: yes
 
   tasks:
-    - name: Install HTTPD
+    - name: Install apache2
       apt:  
         name: httpd
         state: present
