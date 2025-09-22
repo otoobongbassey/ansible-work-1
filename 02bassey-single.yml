@@ -1,6 +1,6 @@
 ---
-- name: Install HTTPD servers
-  hosts: ansible1CentOS
+- name: Install apache2 servers
+  hosts: Debian
   become: yes
 
   tasks:
