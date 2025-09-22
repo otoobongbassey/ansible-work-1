@@ -1,5 +1,5 @@
 ---
-- name: Install apache2 On Ubuntu servers
+- name: Install apache2 On Ubuntu/Debian/Redhat servers
   hosts: group1
   become: yes
 
