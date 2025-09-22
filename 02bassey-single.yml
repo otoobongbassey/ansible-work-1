@@ -25,5 +25,5 @@
 
     - name: Create Directory
       file:  
-      path: /var/www/html
-      state: directory  
+        path: /var/www/html
+        state: directory  
