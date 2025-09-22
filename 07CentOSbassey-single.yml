@@ -15,4 +15,16 @@
         state: started
         enabled: yes
 
+---
+- name: Create A Directory
+  hosts: ansible1CenOS
+  become: yes
+
+  tasks:
+    - name: Directory
+      file:  
+        path: /home/ec2-user/try_dir
+        state: directory
+
+   
         
