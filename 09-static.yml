@@ -1,6 +1,6 @@
 ---
 - name: static page
-  hosts: ansible1CentOS
+  hosts: group1
   become: yes
 
   tasks:
