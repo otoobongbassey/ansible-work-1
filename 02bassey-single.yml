@@ -22,8 +22,8 @@
         name: apache2
         enabled: yes    
       when: ansible_distribution == "Ubuntu" or ansible_distribution == "Redhat" 
-       
+
     - name: Create Directory
       file:  
-      path: /var/www/
+      path: /var/www/html
       state: directory  
