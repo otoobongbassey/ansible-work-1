@@ -1,6 +1,6 @@
 ---
 - name: Install apache2 servers
-  hosts: group1
+  hosts: Debian
   become: yes
 
   tasks:
