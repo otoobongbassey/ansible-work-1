@@ -1,0 +1,30 @@
+---
+- name: Install HTTPD On Ubuntu servers
+  hosts: ansible1CentOS
+  become: yes
+
+  tasks:
+    - name: Install apache2
+      apt:  
+        name: apache2
+        state: present
+
+    - name: Start apache Service
+      service:
+        name: apache2
+        state: started
+        enabled: yes
+
+---
+- name: Create A Directory
+  hosts: ansible1CenOS
+  become: yes
+
+  tasks:
+    - name: Directory
+      file:  
+        path: /home/ec2-user/try_dir
+        state: directory
+
+   
+        

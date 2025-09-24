@@ -1,0 +1,16 @@
+---
+- name: Deploy A web servers
+  hosts: ansible3
+  become: yes
+
+  tasks:
+    - name: Install Git
+      yum:  
+        name: git
+        state: present
+
+    - name: Host Or Keep Code
+      git:
+        repo: https://github.com/CeeyIT-Solutions/food3.git
+        dest: /var/www/html
+        

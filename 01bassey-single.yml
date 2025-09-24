@@ -1,0 +1,55 @@
+---
+- name: Update ansible2Cent servers
+  hosts: ansible2Cent
+
+  tasks:
+  - name: Create Directory
+    file:  
+      path: /home/ec2-user/try_dir
+      state: directory
+
+  - name: Create Directory
+    file:  
+      path: /home/ec2-user/try_dir_1
+      state: directory
+
+- name: Update ansible3 servers
+  hosts: ansible3
+
+  tasks:
+  - name: Create Directory
+    file:  
+      path: /home/ec2-user/try_dir_1
+      state: directory
+
+  - name: Create Directory
+    file:  
+      path: /home/ec2-user/try_dir_2
+      state: directory   
+
+- name: Update ansible4 servers
+  hosts: ansible4
+
+  tasks:
+  - name: Create Directory
+    file:  
+      path: /home/ec2-user/try_dir_1
+      state: directory
+  - name: Create Directory
+    file:  
+      path: /home/ec2-user/try_dir_2
+      state: directory
+
+- name: Update ansible1CentOS servers
+  hosts: ansible1CentOS
+
+  tasks:
+  - name: Create Directory
+    file:  
+      path: /home/ec2-user/try_dir_1
+      state: directory
+
+  - name: Create Directory
+    file:  
+      path: /home/ec2-user/try_dir_2
+      state: directory
