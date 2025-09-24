@@ -2,6 +2,8 @@
 - name: Install apache2 servers
   hosts: Debian
   become: yes
+  vars: 
+    myusername: Bassey
 
   tasks:
     - name: Install apache2
