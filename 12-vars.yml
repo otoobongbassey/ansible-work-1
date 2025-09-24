@@ -4,7 +4,7 @@
   become: yes
   vars:
     myusername: Bassey 
-    instance_type: t2micro
+    instance_type: t2.micro
 
   tasks:
     - name: Update dynamic variable
