@@ -1,6 +1,6 @@
 ---
 - name: static page
-  hosts: group1
+  hosts: Debian
   become: yes
 
   tasks:
