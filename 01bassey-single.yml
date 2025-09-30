@@ -1,6 +1,6 @@
 ---
-- name: Update ansible2Cent servers
-  hosts: ansible2Cent
+- name: Update ansibleDebian servers
+  hosts: ansibleDebian
 
   tasks:
   - name: Create Directory
@@ -13,8 +13,8 @@
       path: /home/ec2-user/try_dir_1
       state: directory
 
-- name: Update ansible3 servers
-  hosts: ansible3
+- name: Update ansibleUbuntu servers
+  hosts: ansibleUbuntu
 
   tasks:
   - name: Create Directory
@@ -27,8 +27,8 @@
       path: /home/ec2-user/try_dir_2
       state: directory   
 
-- name: Update ansible4 servers
-  hosts: ansible4
+- name: Update ansibleRedHat servers
+  hosts: ansible4RedHat
 
   tasks:
   - name: Create Directory
@@ -40,8 +40,8 @@
       path: /home/ec2-user/try_dir_2
       state: directory
 
-- name: Update ansible1CentOS servers
-  hosts: ansible1CentOS
+- name: Update ansibleAmazonLinux servers
+  hosts: ansibleAmazonLinux
 
   tasks:
   - name: Create Directory
